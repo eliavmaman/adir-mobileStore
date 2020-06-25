@@ -1,0 +1,5 @@
+<h2 class="text-center">Iphone Section</h2>
+<hr class="spiltter">
+<div class="pure-g-r" *ngFor="let p of products; let odd = odd">
+  <app-product-right-details [product]="p" [left]="odd"></app-product-right-details>
+</div>

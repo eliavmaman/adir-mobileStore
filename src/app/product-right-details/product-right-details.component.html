@@ -1,0 +1,19 @@
+<div class="pure-u-1-2" *ngIf="product">
+  <div class="brand">
+    <div class="content pure-u-1 mac picture_frame">
+      <div class="brand">
+        <img [src]="product.image" alt="private">
+        <div>
+          Price:{{product.price}}$
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--------------1/2 right div---------------------------->
+<div class="pure-u-1-2" [ngClass]="{'float-left':left}">
+  <div class="brand">
+    <h3>{{product.name}}</h3>
+    <p>  {{product.description}} </p>
+  </div>
+</div>
